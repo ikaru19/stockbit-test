@@ -7,15 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3249CB02BE36F143E3C645AF /* Pods_Stockbit2_Stockbit2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD3E0DF5044258FC9B8915A9 /* Pods_Stockbit2_Stockbit2UITests.framework */; };
+		3C4AA5BB887558F6801CB2FA /* Pods_Stockbit2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E08DF749317A4941CF988F /* Pods_Stockbit2Tests.framework */; };
+		65B8C03F70998D98FA361F0F /* ProvideInjectorResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8C26036FA2C47CF86F447 /* ProvideInjectorResolver.swift */; };
+		65B8C03F8A99B6A3F7E551D7 /* StockbitJsonAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8CFD03AEFA868DC19D415 /* StockbitJsonAPI.swift */; };
+		65B8C06B7D2B445F8D3A673D /* UIKitModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8CB3F2DBF27547B27DC44 /* UIKitModule.swift */; };
+		65B8C097D02962D0A160FBDF /* GetTopListUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8C96320BA77B5A39218F8 /* GetTopListUseCaseImpl.swift */; };
+		65B8C0D7149893725820B4B4 /* ConversionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8CE3361074B7AEA5091F2 /* ConversionError.swift */; };
+		65B8C0E4BC8ACA714F91D538 /* ApiDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8CF0BA10E92ABC48EDB73 /* ApiDataResponse.swift */; };
+		65B8C14C308F03A8D0D56683 /* RuntimeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8C9C39029C8AD8CCA4246 /* RuntimeError.swift */; };
+		65B8C19BE95BB6F77E912851 /* UseCaseModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8C7DF12844D816873A44C /* UseCaseModule.swift */; };
 		65B8C1FD14F8F146FF3814E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B8CE221CC419AC7BD8FB2E /* LaunchScreen.storyboard */; };
+		65B8C266DC29A9FE31D2F98C /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8C3CA1C6B0C4AC5480CED /* Constant.swift */; };
+		65B8C3894754EE5F2A0E736B /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8CF7253A11CEF012B3304 /* AppComponent.swift */; };
+		65B8C3C19F3064A168050E21 /* UIKitControllerModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8C96544E9C5B6FA87462A /* UIKitControllerModule.swift */; };
 		65B8C43210AD55852C150931 /* Stockbit2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8CEEC004E86E68ABE8F33 /* Stockbit2Tests.swift */; };
+		65B8C46563275E3B84446657 /* MainInjectorResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8CCD1FC56D3BEE387D386 /* MainInjectorResolver.swift */; };
 		65B8C4C786DB951EA572B443 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65B8C09BCDC7A12608DD180F /* Assets.xcassets */; };
+		65B8C5215893D8240B3CE903 /* InjectorResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8C3ECDC8C7A2E47AEFAD5 /* InjectorResolver.swift */; };
 		65B8C5A191A89D2302D3C1E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8C36DFEABB82BCF79D110 /* AppDelegate.swift */; };
+		65B8C5E5EB6DABD469A6B7FD /* CoreModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8C246EB541DB26425EF5A /* CoreModule.swift */; };
+		65B8C64EB5302CB035759A24 /* StockbitAF+JsonRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8CD9E4CC3A2867C120876 /* StockbitAF+JsonRequest.swift */; };
+		65B8C6555BEDDFCE958076DB /* MainPageModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8C17C2C902E51CA07FCD3 /* MainPageModule.swift */; };
 		65B8C6590CB914BEE4D7F86F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B8C81F3F7BE5404A349759 /* Main.storyboard */; };
+		65B8C6AFD057D0195AC0734D /* PresentationModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8CCB823412EFFB858E331 /* PresentationModule.swift */; };
+		65B8C7414827F69BB85D130B /* TopListRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8CC62107C176F365A5F23 /* TopListRemoteDataSource.swift */; };
+		65B8C77AE73805462A9415A4 /* SingletonScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8C987139DE886C0B0ACB5 /* SingletonScope.swift */; };
+		65B8C7ABF479279AD84B44F9 /* MainViewControllerResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8C6A2C9A08A6E16F61CF6 /* MainViewControllerResolver.swift */; };
+		65B8C7CDE60BE4443B12EAAA /* TopListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8C2BC3CBC8DD410BB1BED /* TopListViewController.swift */; };
+		65B8C864EC4A619F937F536F /* APIDataResponseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8C9720C8BD45B24F243DE /* APIDataResponseImpl.swift */; };
+		65B8C9AAC2BA28F7B090E4F7 /* JsonRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8C3ACD3E3DAE87FE1073F /* JsonRequest.swift */; };
+		65B8CA2ABB62C23E4A0BFE6A /* GetTopListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8CB8988476BA4AAA5236F /* GetTopListUseCase.swift */; };
+		65B8CA490F6E1CDC78F500F6 /* StockbitAFRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8C9E92EDE7BFEAB2032F2 /* StockbitAFRequest.swift */; };
 		65B8CA4B7A6D1192B75FD630 /* Stockbit2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8CA40FB14A7C3E4146D28 /* Stockbit2UITests.swift */; };
+		65B8CAAC59B5AFBEF53DC14D /* TopListEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8CF10CEA77478E77EF626 /* TopListEntity.swift */; };
+		65B8CB9CE8FC10E349D3C87D /* DomainModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8CF97EF8F094737923191 /* DomainModule.swift */; };
+		65B8CBAC26A10BF68ED2E560 /* ProvideViewControllerResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8C6702282DF68BFE9C63E /* ProvideViewControllerResolver.swift */; };
+		65B8CBFECA82C14F0960E294 /* ViewControllerResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8CAE6861C67A8B5912BF9 /* ViewControllerResolver.swift */; };
+		65B8CC31494FF896A05ED65C /* ViewModelModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8C611E817E6FA583CA0AA /* ViewModelModule.swift */; };
+		65B8CC9B4C6D0DB92001291C /* StockbitJson+TopList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8C895A49A4FA3AB159DAD /* StockbitJson+TopList.swift */; };
+		65B8CCAE6E09430A3480A502 /* NameSpaceDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8CC73F3AA36F8087A85C2 /* NameSpaceDomain.swift */; };
 		65B8CD07E3FC5786FCDBBE50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8CF3C7AE8CA8EE57B63EE /* ViewController.swift */; };
+		65B8CDBE32069EC5547BDCD9 /* NetworkingModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8C9242FC50AF2301C5F06 /* NetworkingModule.swift */; };
+		65B8CECBEA0D368B747C7AC5 /* DataModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8CDDDCDD6DC37BD6A1468 /* DataModule.swift */; };
+		65B8CECCCC0DC628368C3FEE /* StockbitAPIModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8C5250106A79FE462AE2E /* StockbitAPIModule.swift */; };
 		65B8CF612B2C1842D543881B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8C828FAD27F12D64A89DA /* SceneDelegate.swift */; };
 		65B8CFB337112AA09C62A2A1 /* Stockbit2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8C0F0685085E995948BDC /* Stockbit2UITestsLaunchTests.swift */; };
+		6CF33068A607739CAEB989C5 /* Pods_Stockbit2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6FEDF9585A8145F275DEA8 /* Pods_Stockbit2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,19 +74,63 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		085BC28C72A4D5BEC92DF544 /* Pods-Stockbit2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stockbit2.debug.xcconfig"; path = "Target Support Files/Pods-Stockbit2/Pods-Stockbit2.debug.xcconfig"; sourceTree = "<group>"; };
+		0C6FEDF9585A8145F275DEA8 /* Pods_Stockbit2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stockbit2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17964B9E3164062BBEC8DEB6 /* Pods-Stockbit2-Stockbit2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stockbit2-Stockbit2UITests.debug.xcconfig"; path = "Target Support Files/Pods-Stockbit2-Stockbit2UITests/Pods-Stockbit2-Stockbit2UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		22E08DF749317A4941CF988F /* Pods_Stockbit2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stockbit2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36276552B18DDD7E0B491C94 /* Pods-Stockbit2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stockbit2Tests.release.xcconfig"; path = "Target Support Files/Pods-Stockbit2Tests/Pods-Stockbit2Tests.release.xcconfig"; sourceTree = "<group>"; };
+		3D7EF45C0383D222B6856B91 /* Pods-Stockbit2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stockbit2.release.xcconfig"; path = "Target Support Files/Pods-Stockbit2/Pods-Stockbit2.release.xcconfig"; sourceTree = "<group>"; };
 		65B8C09BCDC7A12608DD180F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65B8C0F0685085E995948BDC /* Stockbit2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stockbit2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		65B8C17C2C902E51CA07FCD3 /* MainPageModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageModule.swift; sourceTree = "<group>"; };
 		65B8C238E6AF1674ACD03BDB /* Stockbit2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Stockbit2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		65B8C246EB541DB26425EF5A /* CoreModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreModule.swift; sourceTree = "<group>"; };
+		65B8C26036FA2C47CF86F447 /* ProvideInjectorResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvideInjectorResolver.swift; sourceTree = "<group>"; };
+		65B8C2BC3CBC8DD410BB1BED /* TopListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopListViewController.swift; sourceTree = "<group>"; };
 		65B8C36DFEABB82BCF79D110 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65B8C37F95D81B4D9B9570BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		65B8C3ACD3E3DAE87FE1073F /* JsonRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonRequest.swift; sourceTree = "<group>"; };
+		65B8C3CA1C6B0C4AC5480CED /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		65B8C3ECDC8C7A2E47AEFAD5 /* InjectorResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InjectorResolver.swift; sourceTree = "<group>"; };
+		65B8C5250106A79FE462AE2E /* StockbitAPIModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockbitAPIModule.swift; sourceTree = "<group>"; };
+		65B8C611E817E6FA583CA0AA /* ViewModelModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelModule.swift; sourceTree = "<group>"; };
 		65B8C63782F80A6ABB07C246 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		65B8C6702282DF68BFE9C63E /* ProvideViewControllerResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvideViewControllerResolver.swift; sourceTree = "<group>"; };
+		65B8C6A2C9A08A6E16F61CF6 /* MainViewControllerResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewControllerResolver.swift; sourceTree = "<group>"; };
+		65B8C7DF12844D816873A44C /* UseCaseModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCaseModule.swift; sourceTree = "<group>"; };
 		65B8C828FAD27F12D64A89DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		65B8C895A49A4FA3AB159DAD /* StockbitJson+TopList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StockbitJson+TopList.swift"; sourceTree = "<group>"; };
 		65B8C8A07AE0A9F3D871F307 /* Stockbit2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Stockbit2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		65B8C9242FC50AF2301C5F06 /* NetworkingModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingModule.swift; sourceTree = "<group>"; };
+		65B8C96320BA77B5A39218F8 /* GetTopListUseCaseImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTopListUseCaseImpl.swift; sourceTree = "<group>"; };
+		65B8C96544E9C5B6FA87462A /* UIKitControllerModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitControllerModule.swift; sourceTree = "<group>"; };
+		65B8C9720C8BD45B24F243DE /* APIDataResponseImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIDataResponseImpl.swift; sourceTree = "<group>"; };
+		65B8C987139DE886C0B0ACB5 /* SingletonScope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingletonScope.swift; sourceTree = "<group>"; };
+		65B8C9C39029C8AD8CCA4246 /* RuntimeError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuntimeError.swift; sourceTree = "<group>"; };
 		65B8C9CD7A6FAA679A89C8DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		65B8C9E92EDE7BFEAB2032F2 /* StockbitAFRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockbitAFRequest.swift; sourceTree = "<group>"; };
 		65B8CA40FB14A7C3E4146D28 /* Stockbit2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stockbit2UITests.swift; sourceTree = "<group>"; };
+		65B8CAE6861C67A8B5912BF9 /* ViewControllerResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerResolver.swift; sourceTree = "<group>"; };
+		65B8CB3F2DBF27547B27DC44 /* UIKitModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitModule.swift; sourceTree = "<group>"; };
+		65B8CB8988476BA4AAA5236F /* GetTopListUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTopListUseCase.swift; sourceTree = "<group>"; };
+		65B8CC62107C176F365A5F23 /* TopListRemoteDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopListRemoteDataSource.swift; sourceTree = "<group>"; };
+		65B8CC73F3AA36F8087A85C2 /* NameSpaceDomain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameSpaceDomain.swift; sourceTree = "<group>"; };
+		65B8CCB823412EFFB858E331 /* PresentationModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationModule.swift; sourceTree = "<group>"; };
+		65B8CCD1FC56D3BEE387D386 /* MainInjectorResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainInjectorResolver.swift; sourceTree = "<group>"; };
 		65B8CD002EC0A06DB75206B0 /* Stockbit2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stockbit2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65B8CD9E4CC3A2867C120876 /* StockbitAF+JsonRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StockbitAF+JsonRequest.swift"; sourceTree = "<group>"; };
+		65B8CDDDCDD6DC37BD6A1468 /* DataModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModule.swift; sourceTree = "<group>"; };
+		65B8CE3361074B7AEA5091F2 /* ConversionError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversionError.swift; sourceTree = "<group>"; };
 		65B8CEEC004E86E68ABE8F33 /* Stockbit2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stockbit2Tests.swift; sourceTree = "<group>"; };
+		65B8CF0BA10E92ABC48EDB73 /* ApiDataResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiDataResponse.swift; sourceTree = "<group>"; };
+		65B8CF10CEA77478E77EF626 /* TopListEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopListEntity.swift; sourceTree = "<group>"; };
 		65B8CF3C7AE8CA8EE57B63EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		65B8CF7253A11CEF012B3304 /* AppComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppComponent.swift; sourceTree = "<group>"; };
+		65B8CF97EF8F094737923191 /* DomainModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DomainModule.swift; sourceTree = "<group>"; };
+		65B8CFD03AEFA868DC19D415 /* StockbitJsonAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockbitJsonAPI.swift; sourceTree = "<group>"; };
+		8231DB86F8A68D008D4A28C2 /* Pods-Stockbit2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stockbit2Tests.debug.xcconfig"; path = "Target Support Files/Pods-Stockbit2Tests/Pods-Stockbit2Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D83255297FC46CA2DFEA0011 /* Pods-Stockbit2-Stockbit2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stockbit2-Stockbit2UITests.release.xcconfig"; path = "Target Support Files/Pods-Stockbit2-Stockbit2UITests/Pods-Stockbit2-Stockbit2UITests.release.xcconfig"; sourceTree = "<group>"; };
+		FD3E0DF5044258FC9B8915A9 /* Pods_Stockbit2_Stockbit2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stockbit2_Stockbit2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3249CB02BE36F143E3C645AF /* Pods_Stockbit2_Stockbit2UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C4AA5BB887558F6801CB2FA /* Pods_Stockbit2Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +154,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CF33068A607739CAEB989C5 /* Pods_Stockbit2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65B8C01B97AEA510C7360090 /* Stockbit */ = {
+			isa = PBXGroup;
+			children = (
+				65B8C9E92EDE7BFEAB2032F2 /* StockbitAFRequest.swift */,
+				65B8CD9E4CC3A2867C120876 /* StockbitAF+JsonRequest.swift */,
+			);
+			path = Stockbit;
+			sourceTree = "<group>";
+		};
+		65B8C058174585B4690BC1C3 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				65B8C304872F4C178D41B8B1 /* RemoteDataSource */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		65B8C1A1EB91D219AFCA8ED3 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				65B8CF10CEA77478E77EF626 /* TopListEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		65B8C1E7C2CBC75FE0DCDAC6 /* DomainLayer */ = {
+			isa = PBXGroup;
+			children = (
+				65B8C1A1EB91D219AFCA8ED3 /* Entity */,
+				65B8CC73F3AA36F8087A85C2 /* NameSpaceDomain.swift */,
+				65B8CCB0CF1039326D777B98 /* UseCase */,
+			);
+			path = DomainLayer;
+			sourceTree = "<group>";
+		};
 		65B8C1F5C8E51CF88CBA51B4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -86,12 +206,40 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		65B8C304872F4C178D41B8B1 /* RemoteDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				65B8CC1C11CBC612B0F35139 /* API */,
+				65B8C56D5A73CCF924095D92 /* Interface */,
+			);
+			path = RemoteDataSource;
+			sourceTree = "<group>";
+		};
 		65B8C426E7B456C6AE10A666 /* Stockbit2Tests */ = {
 			isa = PBXGroup;
 			children = (
 				65B8CEEC004E86E68ABE8F33 /* Stockbit2Tests.swift */,
 			);
 			path = Stockbit2Tests;
+			sourceTree = "<group>";
+		};
+		65B8C484C3FAE88AEE44D4EB /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				65B8CF97EF8F094737923191 /* DomainModule.swift */,
+				65B8C7DF12844D816873A44C /* UseCaseModule.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		65B8C4C0D03EA909DE42E8F8 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				65B8CD863B4FCEE46139CA61 /* Interface */,
+				65B8C01B97AEA510C7360090 /* Stockbit */,
+				65B8CE2816037F953B1E341A /* Entity */,
+			);
+			path = Infrastructure;
 			sourceTree = "<group>";
 		};
 		65B8C4C1A059B95C5DBE701E /* Stockbit2UITests */ = {
@@ -103,6 +251,69 @@
 			path = Stockbit2UITests;
 			sourceTree = "<group>";
 		};
+		65B8C4C3C746364B22BC49A5 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				65B8C246EB541DB26425EF5A /* CoreModule.swift */,
+				65B8CD1C77BA2782C1BA2491 /* Presentation */,
+				65B8C710B16D9D71E11778E5 /* Data */,
+				65B8C484C3FAE88AEE44D4EB /* Domain */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		65B8C4F3F1654DFDF1571399 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				65B8CE3361074B7AEA5091F2 /* ConversionError.swift */,
+				65B8C9C39029C8AD8CCA4246 /* RuntimeError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		65B8C56D5A73CCF924095D92 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				65B8CC62107C176F365A5F23 /* TopListRemoteDataSource.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		65B8C5BE8A927124183E1CC3 /* Scope */ = {
+			isa = PBXGroup;
+			children = (
+				65B8C987139DE886C0B0ACB5 /* SingletonScope.swift */,
+			);
+			path = Scope;
+			sourceTree = "<group>";
+		};
+		65B8C63CD0B4E622252EDBA5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				65B8C2BC3CBC8DD410BB1BED /* TopListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		65B8C710B16D9D71E11778E5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				65B8CDDDCDD6DC37BD6A1468 /* DataModule.swift */,
+				65B8C9242FC50AF2301C5F06 /* NetworkingModule.swift */,
+				65B8C5250106A79FE462AE2E /* StockbitAPIModule.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		65B8CC1C11CBC612B0F35139 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				65B8C895A49A4FA3AB159DAD /* StockbitJson+TopList.swift */,
+				65B8CFD03AEFA868DC19D415 /* StockbitJsonAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		65B8CC303AEE6DE762DB9D9C = {
 			isa = PBXGroup;
 			children = (
@@ -110,7 +321,38 @@
 				65B8CD768BE867B2AE817851 /* Stockbit2 */,
 				65B8C426E7B456C6AE10A666 /* Stockbit2Tests */,
 				65B8C4C1A059B95C5DBE701E /* Stockbit2UITests */,
+				762B7FEEFC6EFED479D61A0C /* Pods */,
+				B3A3664657C1A925A896DCCF /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		65B8CCA141D80ECFDAE6E1DC /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				65B8C63CD0B4E622252EDBA5 /* ViewController */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		65B8CCB0CF1039326D777B98 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				65B8CB8988476BA4AAA5236F /* GetTopListUseCase.swift */,
+				65B8C96320BA77B5A39218F8 /* GetTopListUseCaseImpl.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		65B8CD1C77BA2782C1BA2491 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				65B8CCB823412EFFB858E331 /* PresentationModule.swift */,
+				65B8CB3F2DBF27547B27DC44 /* UIKitModule.swift */,
+				65B8C96544E9C5B6FA87462A /* UIKitControllerModule.swift */,
+				65B8C17C2C902E51CA07FCD3 /* MainPageModule.swift */,
+				65B8C611E817E6FA583CA0AA /* ViewModelModule.swift */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 		65B8CD768BE867B2AE817851 /* Stockbit2 */ = {
@@ -123,8 +365,79 @@
 				65B8C828FAD27F12D64A89DA /* SceneDelegate.swift */,
 				65B8CF3C7AE8CA8EE57B63EE /* ViewController.swift */,
 				65B8C81F3F7BE5404A349759 /* Main.storyboard */,
+				65B8C058174585B4690BC1C3 /* DataLayer */,
+				65B8CF7253A11CEF012B3304 /* AppComponent.swift */,
+				65B8CF84D818205973F7B444 /* DI */,
+				65B8CCD1FC56D3BEE387D386 /* MainInjectorResolver.swift */,
+				65B8CCA141D80ECFDAE6E1DC /* PresentationLayer */,
+				65B8C6A2C9A08A6E16F61CF6 /* MainViewControllerResolver.swift */,
+				65B8C3CA1C6B0C4AC5480CED /* Constant.swift */,
+				65B8C4C0D03EA909DE42E8F8 /* Infrastructure */,
+				65B8C1E7C2CBC75FE0DCDAC6 /* DomainLayer */,
+				65B8C4F3F1654DFDF1571399 /* Errors */,
 			);
 			path = Stockbit2;
+			sourceTree = "<group>";
+		};
+		65B8CD863B4FCEE46139CA61 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				65B8C3ACD3E3DAE87FE1073F /* JsonRequest.swift */,
+				65B8CF0BA10E92ABC48EDB73 /* ApiDataResponse.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		65B8CE2816037F953B1E341A /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				65B8C9720C8BD45B24F243DE /* APIDataResponseImpl.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		65B8CEC4710DDD51F359B239 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				65B8C3ECDC8C7A2E47AEFAD5 /* InjectorResolver.swift */,
+				65B8C26036FA2C47CF86F447 /* ProvideInjectorResolver.swift */,
+				65B8C6702282DF68BFE9C63E /* ProvideViewControllerResolver.swift */,
+				65B8CAE6861C67A8B5912BF9 /* ViewControllerResolver.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		65B8CF84D818205973F7B444 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				65B8CEC4710DDD51F359B239 /* Interface */,
+				65B8C5BE8A927124183E1CC3 /* Scope */,
+				65B8C4C3C746364B22BC49A5 /* Module */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		762B7FEEFC6EFED479D61A0C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				085BC28C72A4D5BEC92DF544 /* Pods-Stockbit2.debug.xcconfig */,
+				3D7EF45C0383D222B6856B91 /* Pods-Stockbit2.release.xcconfig */,
+				17964B9E3164062BBEC8DEB6 /* Pods-Stockbit2-Stockbit2UITests.debug.xcconfig */,
+				D83255297FC46CA2DFEA0011 /* Pods-Stockbit2-Stockbit2UITests.release.xcconfig */,
+				8231DB86F8A68D008D4A28C2 /* Pods-Stockbit2Tests.debug.xcconfig */,
+				36276552B18DDD7E0B491C94 /* Pods-Stockbit2Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B3A3664657C1A925A896DCCF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C6FEDF9585A8145F275DEA8 /* Pods_Stockbit2.framework */,
+				FD3E0DF5044258FC9B8915A9 /* Pods_Stockbit2_Stockbit2UITests.framework */,
+				22E08DF749317A4941CF988F /* Pods_Stockbit2Tests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,9 +447,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65B8C0D4B3DFB897A5F43BBA /* Build configuration list for PBXNativeTarget "Stockbit2" */;
 			buildPhases = (
+				3BB9086F2D2223289B5F2077 /* [CP] Check Pods Manifest.lock */,
 				65B8C3365808AF8E8B135EAD /* Sources */,
 				65B8CEB560CB923A7B2297F9 /* Frameworks */,
 				65B8CB97890B060196F35666 /* Resources */,
+				F7CD3BCE60DCD69A2FB9D6F6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +466,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65B8CC4896682590E99F2F74 /* Build configuration list for PBXNativeTarget "Stockbit2Tests" */;
 			buildPhases = (
+				CD6EF167004CA2731FA35901 /* [CP] Check Pods Manifest.lock */,
 				65B8C89CC47862F092B0B4F1 /* Sources */,
 				65B8C9EB665852CFF8D719D0 /* Frameworks */,
 				65B8C783C98C3CB83DCE12C8 /* Resources */,
@@ -169,9 +485,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65B8CC134B495D51CA0C8D4D /* Build configuration list for PBXNativeTarget "Stockbit2UITests" */;
 			buildPhases = (
+				B89E5CAC2F9B6B74F32332BD /* [CP] Check Pods Manifest.lock */,
 				65B8C467604F535D69418C6C /* Sources */,
 				65B8C9856B4D75A29AFE1F2B /* Frameworks */,
 				65B8CF8C68AF6A5E43530B9A /* Resources */,
+				B01F16C6DC939BE832E10421 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -188,12 +506,16 @@
 /* Begin PBXProject section */
 		65B8CE347A64E26ED4719A21 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = 65B8C71E0DEE7F1C1D0E3C98 /* Build configuration list for PBXProject "Stockbit2" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
+				Base,
 			);
 			mainGroup = 65B8CC303AEE6DE762DB9D9C;
 			productRefGroup = 65B8C1F5C8E51CF88CBA51B4 /* Products */;
@@ -234,6 +556,127 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3BB9086F2D2223289B5F2077 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Stockbit2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B01F16C6DC939BE832E10421 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Stockbit2-Stockbit2UITests/Pods-Stockbit2-Stockbit2UITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Cleanse/Cleanse.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cleanse.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Stockbit2-Stockbit2UITests/Pods-Stockbit2-Stockbit2UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B89E5CAC2F9B6B74F32332BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Stockbit2-Stockbit2UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD6EF167004CA2731FA35901 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Stockbit2Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7CD3BCE60DCD69A2FB9D6F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Stockbit2/Pods-Stockbit2-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Cleanse/Cleanse.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cleanse.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Stockbit2/Pods-Stockbit2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		65B8C3365808AF8E8B135EAD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -242,6 +685,41 @@
 				65B8C5A191A89D2302D3C1E7 /* AppDelegate.swift in Sources */,
 				65B8CF612B2C1842D543881B /* SceneDelegate.swift in Sources */,
 				65B8CD07E3FC5786FCDBBE50 /* ViewController.swift in Sources */,
+				65B8CC9B4C6D0DB92001291C /* StockbitJson+TopList.swift in Sources */,
+				65B8C3894754EE5F2A0E736B /* AppComponent.swift in Sources */,
+				65B8C5215893D8240B3CE903 /* InjectorResolver.swift in Sources */,
+				65B8C03F70998D98FA361F0F /* ProvideInjectorResolver.swift in Sources */,
+				65B8CBAC26A10BF68ED2E560 /* ProvideViewControllerResolver.swift in Sources */,
+				65B8CBFECA82C14F0960E294 /* ViewControllerResolver.swift in Sources */,
+				65B8C77AE73805462A9415A4 /* SingletonScope.swift in Sources */,
+				65B8C5E5EB6DABD469A6B7FD /* CoreModule.swift in Sources */,
+				65B8C46563275E3B84446657 /* MainInjectorResolver.swift in Sources */,
+				65B8C7CDE60BE4443B12EAAA /* TopListViewController.swift in Sources */,
+				65B8C7ABF479279AD84B44F9 /* MainViewControllerResolver.swift in Sources */,
+				65B8C6AFD057D0195AC0734D /* PresentationModule.swift in Sources */,
+				65B8CECBEA0D368B747C7AC5 /* DataModule.swift in Sources */,
+				65B8CDBE32069EC5547BDCD9 /* NetworkingModule.swift in Sources */,
+				65B8C266DC29A9FE31D2F98C /* Constant.swift in Sources */,
+				65B8C03F8A99B6A3F7E551D7 /* StockbitJsonAPI.swift in Sources */,
+				65B8C9AAC2BA28F7B090E4F7 /* JsonRequest.swift in Sources */,
+				65B8CA490F6E1CDC78F500F6 /* StockbitAFRequest.swift in Sources */,
+				65B8CECCCC0DC628368C3FEE /* StockbitAPIModule.swift in Sources */,
+				65B8C64EB5302CB035759A24 /* StockbitAF+JsonRequest.swift in Sources */,
+				65B8C06B7D2B445F8D3A673D /* UIKitModule.swift in Sources */,
+				65B8C3C19F3064A168050E21 /* UIKitControllerModule.swift in Sources */,
+				65B8C6555BEDDFCE958076DB /* MainPageModule.swift in Sources */,
+				65B8CC31494FF896A05ED65C /* ViewModelModule.swift in Sources */,
+				65B8C7414827F69BB85D130B /* TopListRemoteDataSource.swift in Sources */,
+				65B8CCAE6E09430A3480A502 /* NameSpaceDomain.swift in Sources */,
+				65B8CAAC59B5AFBEF53DC14D /* TopListEntity.swift in Sources */,
+				65B8C0E4BC8ACA714F91D538 /* ApiDataResponse.swift in Sources */,
+				65B8C864EC4A619F937F536F /* APIDataResponseImpl.swift in Sources */,
+				65B8C0D7149893725820B4B4 /* ConversionError.swift in Sources */,
+				65B8C14C308F03A8D0D56683 /* RuntimeError.swift in Sources */,
+				65B8CA2ABB62C23E4A0BFE6A /* GetTopListUseCase.swift in Sources */,
+				65B8C097D02962D0A160FBDF /* GetTopListUseCaseImpl.swift in Sources */,
+				65B8CB9CE8FC10E349D3C87D /* DomainModule.swift in Sources */,
+				65B8C19BE95BB6F77E912851 /* UseCaseModule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +777,7 @@
 /* Begin XCBuildConfiguration section */
 		65B8C20CCDA1BE79B99592C4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D83255297FC46CA2DFEA0011 /* Pods-Stockbit2-Stockbit2UITests.release.xcconfig */;
 			buildSettings = {
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -315,6 +794,7 @@
 		};
 		65B8C45C8F0D01415B07F9AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 085BC28C72A4D5BEC92DF544 /* Pods-Stockbit2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -399,6 +879,7 @@
 		};
 		65B8C7326DB24F0940E50EE9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D7EF45C0383D222B6856B91 /* Pods-Stockbit2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -422,6 +903,7 @@
 		};
 		65B8C967AD68804F6279AD60 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36276552B18DDD7E0B491C94 /* Pods-Stockbit2Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Stockbit2.app/Stockbit2";
 				CURRENT_PROJECT_VERSION = 1;
@@ -439,6 +921,7 @@
 		};
 		65B8C9C7515F69D46140E4AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8231DB86F8A68D008D4A28C2 /* Pods-Stockbit2Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Stockbit2.app/Stockbit2";
 				CURRENT_PROJECT_VERSION = 1;
@@ -456,6 +939,7 @@
 		};
 		65B8CE64FCD8406E072F9FA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17964B9E3164062BBEC8DEB6 /* Pods-Stockbit2-Stockbit2UITests.debug.xcconfig */;
 			buildSettings = {
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -519,8 +1003,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -535,6 +1018,7 @@
 				65B8C7326DB24F0940E50EE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65B8C71E0DEE7F1C1D0E3C98 /* Build configuration list for PBXProject "Stockbit2" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +1036,7 @@
 				65B8C20CCDA1BE79B99592C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65B8CC4896682590E99F2F74 /* Build configuration list for PBXNativeTarget "Stockbit2Tests" */ = {
 			isa = XCConfigurationList;
@@ -560,6 +1045,7 @@
 				65B8C967AD68804F6279AD60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

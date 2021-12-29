@@ -1,0 +1,6 @@
+framework module Pods_Stockbit2_Stockbit2UITests {
+  umbrella header "Pods-Stockbit2-Stockbit2UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
