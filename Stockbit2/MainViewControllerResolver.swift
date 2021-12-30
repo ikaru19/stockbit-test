@@ -6,13 +6,13 @@ import Foundation
 import Cleanse
 
 class MainViewControllerResolver: ViewControllerResolver {
-//    var topListVcProvider: Provider<TopListViewController>
-//
-//    init(topListVcProvider: Provider<TopListViewController>) {
-//        self.topListVcProvider = topListVcProvider
-//    }
-//
-//    func instantiateTopListViewController() -> Provider<TopListViewController> {
-//        topListVcProvider
-//    }
+    var topListVcProvider: Provider<TopListViewController>
+
+    init(topListVcProvider: Provider<TopListViewController>) {
+        self.topListVcProvider = topListVcProvider
+    }
+
+    func instantiateTopListViewController() -> Provider<TopListViewController> {
+        topListVcProvider
+    }
 }

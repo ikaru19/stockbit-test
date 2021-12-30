@@ -11,6 +11,9 @@ target 'Stockbit2' do
   pod 'SnapKit', '= 5.0.1'
   pod 'RxAlamofire', '= 5.6.2'
   pod 'RxSwift', '= 5.1.1'
+  pod 'RxCocoa', '= 5.1.1'
+  pod 'SwiftyJSON', '~> 4.0'
+  pod 'lottie-ios'
 
   target 'Stockbit2Tests' do
     inherit! :search_paths
