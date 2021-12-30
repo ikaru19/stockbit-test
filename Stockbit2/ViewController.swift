@@ -43,7 +43,7 @@ class ViewController: UIViewController {
     func injectProperties(
             viewController: TaggedProvider<StockbitBaseUrl>
     ) {
-        //Test Purpose Only
+
     }
 }
 
