@@ -37,7 +37,6 @@ class NewsViewController: UIViewController {
     }
 
     func getNews(category: String) {
-        print("here 40 \(category)")
         viewModel.getNews(category: category)
     }
 
@@ -106,7 +105,8 @@ private extension NewsViewController {
     }
 }
 
-extension NewsViewController {
+// MARK: UIKIT
+private extension NewsViewController {
     func initViews() {
         initTableView()
     }
@@ -121,6 +121,7 @@ extension NewsViewController {
     }
 }
 
+// MARK: TABLE DELEGATE
 extension NewsViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         1

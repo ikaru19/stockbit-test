@@ -29,7 +29,6 @@ class TopListViewController: UIViewController {
         super.viewDidLoad()
         initDesign()
         initViews()
-        initEvents()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -76,14 +75,7 @@ class TopListViewController: UIViewController {
     }
 }
 
-extension TopListViewController: TopListViewModelDelegate{
-    internal func onFinishFetch() {
-        DispatchQueue.main.async {
-            self.tvContent?.cr.endHeaderRefresh()
-        }
-    }
-}
-
+// MARK: UIKIT
 private extension TopListViewController {
     func initDesign() {
         setupBaseView()
@@ -131,6 +123,7 @@ private extension TopListViewController {
     }
 }
 
+// MARK: TABLE DELEGATE
 extension TopListViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         1
@@ -166,11 +159,17 @@ extension TopListViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-private extension TopListViewController {
-    func initEvents() {
-
+// MARK: ViewModel DELEGATE
+extension TopListViewController: TopListViewModelDelegate{
+    internal func onFinishFetch() {
+        DispatchQueue.main.async {
+            self.tvContent?.cr.endHeaderRefresh()
+        }
     }
+}
 
+// MARK: ERROR HANDLER
+private extension TopListViewController {
     func handleError(_ error: Error) {
         let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "Okay", style: UIAlertAction.Style.default, handler: nil))

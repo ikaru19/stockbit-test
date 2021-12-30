@@ -35,6 +35,10 @@ class TopListTableCell: UITableViewCell {
         guard let percent = data.changePercentage,
               let price = data.price,
               let lastPrice = data.change else {
+            lbFullName?.text = data.fullName
+            lbName?.text = data.name
+            lbPrice?.text = "-"
+            lbPercentage?.text = "-"
             return
         }
         self.item = data
@@ -59,6 +63,7 @@ class TopListTableCell: UITableViewCell {
     }
 }
 
+// MARK: UIKIT
 private extension TopListTableCell {
     func initDesign() {
         let vwContainer = generateContainer()
