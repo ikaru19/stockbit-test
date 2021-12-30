@@ -69,6 +69,7 @@ private extension NewsTableCell {
         self.vwContainer = vwContainer
         self.lbSource = lbSource
         self.lbBody = lbBody
+        self.lbTitle = lbTitle
     }
 
     func generateContainer() -> UIView {

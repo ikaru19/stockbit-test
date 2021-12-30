@@ -5,7 +5,6 @@
 import Foundation
 import RxSwift
 import Alamofire
-import SwiftyJSON
 
 class GetTopListUseCaseImpl: GetTopListUseCase {
     private var topListRemoteDataSource: TopListRemoteDataSource
