@@ -11,5 +11,9 @@ struct UIKitControllerModule: Module {
                 .to {
                     TopListViewController(nibName: nil, bundle: nil, viewModel: $0)
                 }
+        binder.bind(NewsViewController.self)
+                .to {
+                    NewsViewController(nibName: nil, bundle: nil, viewModel: $0)
+                }
     }
 }

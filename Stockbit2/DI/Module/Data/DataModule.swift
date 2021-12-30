@@ -14,6 +14,11 @@ struct DataModule: Module {
                 .to { (api: StockbitJsonAPI) in
                     api
                 }
+        binder.bind(NewsRemoteDataSource.self)
+                .sharedInScope()
+                .to { (api: StockbitJsonAPI) in
+                    api
+                }
 
     }
 }
