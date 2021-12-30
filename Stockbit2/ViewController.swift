@@ -16,8 +16,6 @@ import Lottie
 
 class ViewController: UIViewController {
     private var disposeBag = DisposeBag()
-    private var getTopListUseCase: GetTopListUseCase?
-
     private var avSticker: AnimationView?
 
     override func viewDidLoad() {
@@ -43,10 +41,9 @@ class ViewController: UIViewController {
     }
 
     func injectProperties(
-            viewController: TaggedProvider<StockbitBaseUrl>,
-            getTopListUseCase: GetTopListUseCase
+            viewController: TaggedProvider<StockbitBaseUrl>
     ) {
-        self.getTopListUseCase = getTopListUseCase
+        //Test Purpose Only
     }
 }
 
