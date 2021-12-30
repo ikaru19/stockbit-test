@@ -5,6 +5,7 @@
 import Foundation
 import RxSwift
 import Alamofire
+import RxAlamofire
 
 extension StockbitJsonAPI: TopListRemoteDataSource {
     func getTopListRemoteDataSource(limit: Int) -> Observable<Any> {
@@ -14,7 +15,6 @@ extension StockbitJsonAPI: TopListRemoteDataSource {
             "tsym" : "USD"
         ]
 
-        print("here Data 12")
         return jsonRequestService
                 .get(
                         to: endpoint,

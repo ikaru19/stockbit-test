@@ -15,7 +15,6 @@ extension StockbitAFRequest: JsonRequest {
     ) -> Observable<Any> {
         let endPoint = injectBaseUrl(endPoint: endPoint)
         let decoder = JSONDecoder()
-        print("here 18 \(param)")
         return RxAlamofire.json(
                         .get,
                         endPoint,

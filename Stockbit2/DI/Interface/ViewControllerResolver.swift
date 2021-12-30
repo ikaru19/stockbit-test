@@ -6,5 +6,5 @@ import Foundation
 import Cleanse
 
 protocol ViewControllerResolver: AnyObject {
-
+    func instantiateTopListViewController() -> Provider<TopListViewController>
 }

@@ -6,5 +6,5 @@ import Foundation
 import RxSwift
 
 protocol GetTopListUseCase: AnyObject {
-    func execute(limit: Int) -> Single<Domain.Toplist?>
+    func execute(limit: Int) -> Single<[Domain.Toplist]>
 }

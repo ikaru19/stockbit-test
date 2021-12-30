@@ -7,6 +7,7 @@ import Cleanse
 
 struct ViewModelModule: Module {
     static func configure(binder: UnscopedBinder) {
-
+        binder.bind(GetTopListViewModel.self)
+                .to(factory: GetTopListViewModelImpl.init)
     }
 }
