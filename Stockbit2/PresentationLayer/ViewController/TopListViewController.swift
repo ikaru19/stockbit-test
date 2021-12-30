@@ -46,6 +46,7 @@ class TopListViewController: UIViewController {
     }
 
     private func subscribeViewModel() {
+        viewModel.delegate = self
         topListsSubscriber = viewModel.topLists
                 .observeOn(MainScheduler.instance)
                 .subscribe(
@@ -75,7 +76,15 @@ class TopListViewController: UIViewController {
     }
 }
 
-extension TopListViewController {
+extension TopListViewController: TopListViewModelDelegate{
+    internal func onFinishFetch() {
+        DispatchQueue.main.async {
+            self.tvContent?.cr.endHeaderRefresh()
+        }
+    }
+}
+
+private extension TopListViewController {
     func initDesign() {
         setupBaseView()
         let tvContent = generateTableView()
@@ -100,7 +109,7 @@ extension TopListViewController {
     }
 }
 
-extension TopListViewController {
+private extension TopListViewController {
     func initViews() {
         initTableView()
     }
@@ -112,8 +121,16 @@ extension TopListViewController {
         )
         self.tvContent?.delegate = self
         self.tvContent?.dataSource = self
+        initPullToRefresh()
+    }
+
+    private func initPullToRefresh() {
+        tvContent?.cr.addHeadRefresh(animator: PullToRefreshAnimator()) { [weak self] in
+            self?.viewModel.refreshPage()
+        }
     }
 }
+
 extension TopListViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         1
@@ -130,7 +147,17 @@ extension TopListViewController: UITableViewDelegate, UITableViewDataSource {
             return UITableViewCell()
         }
         cell.updateUI(data: topLists[indexPath.row])
+        cell.selectionStyle = .none
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let vc = (UIApplication.shared.delegate as? ProvideViewControllerResolver)?.vcResolver.instantiateNewsViewController().get(),
+           let name = topLists[indexPath.row].name  {
+            guard let navigationController = self.navigationController else { return }
+            vc.getNews(category: name)
+            navigationController.present(UINavigationController(rootViewController:vc), animated: true)
+        }
     }
 
     private func initTopList(_ topList: [Domain.Toplist]) {
@@ -145,7 +172,7 @@ private extension TopListViewController {
     }
 
     func handleError(_ error: Error) {
-        let alert = UIAlertController(title: "Error", message: "Check Your Connection", preferredStyle: UIAlertController.Style.alert)
+        let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "Okay", style: UIAlertAction.Style.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }

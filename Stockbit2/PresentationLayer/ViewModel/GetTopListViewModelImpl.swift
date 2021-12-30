@@ -11,6 +11,7 @@ class GetTopListViewModelImpl: GetTopListViewModel {
     private var _topLists: PublishRelay<[Domain.Toplist]> = PublishRelay()
     private var getTopListUseCase: GetTopListUseCase
     private var disposeBag = DisposeBag()
+    var delegate: TopListViewModelDelegate?
 
     var errors: Observable<Error> {
         _errors.asObservable()
@@ -25,12 +26,14 @@ class GetTopListViewModelImpl: GetTopListViewModel {
     }
 
     func refreshPage() {
+        self.getTopLists(limit: 50)
     }
 
     func getTopLists(limit: Int) {
         getTopListUseCase.execute(limit: limit).subscribe(
                 onSuccess: { [weak self] data in
                     self?._topLists.accept(data)
+                    self?.delegate?.onFinishFetch()
                 }, onError: { [weak self] error in
                     self?._errors.accept(error)
                 })

@@ -34,7 +34,11 @@ class NewsViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         subscribeViewModel()
-        viewModel.getNews(category: "BTC")
+    }
+
+    func getNews(category: String) {
+        print("here 40 \(category)")
+        viewModel.getNews(category: category)
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -133,6 +137,7 @@ extension NewsViewController: UITableViewDelegate, UITableViewDataSource {
             return UITableViewCell()
         }
         cell.updateUI(data: newsList[indexPath.row])
+        cell.selectionStyle = .none
         return cell
     }
 }
