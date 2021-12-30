@@ -7,4 +7,5 @@ import Cleanse
 
 protocol ViewControllerResolver: AnyObject {
     func instantiateTopListViewController() -> Provider<TopListViewController>
+    func instantiateNewsViewController() -> Provider<NewsViewController>
 }
